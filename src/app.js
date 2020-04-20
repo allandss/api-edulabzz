@@ -39,4 +39,4 @@ app.use(errorHandler());
 require('./config/passport');
 app.use(require('./routes'));
 
-app.listen(8000, () => console.log('Server running on http://localhost:8000/'));
+app.listen(process.env.PORT || 3000, () => console.log('Server running on http://localhost:8000/'));
